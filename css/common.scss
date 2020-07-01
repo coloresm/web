@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import 'sassConfig';
+
+.color-main { color: $color-main;}
+.color-second { color: $color-second;}
+.text-main { color: $text-main;}
+.container { 
+    width: $container;
+    margin: 0 auto;
+}
+//组合class样式 靠左 靠右对齐
+.pull-left {float:left;}
+.pull-right {float:right;}
+//header 头部
+.logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    img { display:block;}
+}
+
+//顶部菜单
+.menu-link {
+    a, span, div { float: right;}
+    a {color: #a0a0a0;}
+    .link {
+        width: 1px;
+        height: 12px;
+        background-color: #a0a0a0;
+        margin: 6px 15px;
+    }
+    line-height: 22px;
+}
+//语言符号
+.icon-arrow {
+    display: inline-block;
+    margin: 2px 0px;
+    width: 8px;
+    height: 4px;
+    background: url(../images/走进朗朗.png) no-repeat top;
+
+}
+
+//语言菜单
+.lang {
+    width: 53px;
+    height: 22px;
+    color: #ababab;
+    background-color: #ececec;
+    text-align: center;
+}
+
+
+
+//clearfix清浮动
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{ display: inline-block; }
+* html .clearfix{ height: 1%; }
+.clearfix { display: block; }
+    
